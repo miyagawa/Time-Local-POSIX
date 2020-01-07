@@ -1,10 +1,11 @@
 package Time::Local::POSIX;
 
 use strict;
+use warnings;
 use 5.008_005;
 our $VERSION = '0.01';
 
-use Time::Local 1.27;
+use Time::Local 1.27 ();
 
 use parent 'Exporter';
 our @EXPORT = qw( timelocal timegm );
